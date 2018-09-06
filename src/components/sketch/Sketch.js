@@ -95,11 +95,12 @@ export const Sketch = ({ width, rgb, hex, hsv, hsl, onChange, onSwatchHover,
       </div>
       <div style={ styles.controls } className="flexbox-fix">
         <div style={ styles.sliders }>
-          <div style={ styles.hue }>
+          <div style={ styles.hue } className="hue">
             <Hue
               style={ styles.Hue }
               hsl={ hsl }
               onChange={ onChange }
+              direction={'vertical'}
             />
           </div>
           <div style={ styles.alpha }>
